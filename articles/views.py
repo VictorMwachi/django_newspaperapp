@@ -26,6 +26,7 @@ class ArticleUpdateView(UpdateView):
     model = Article
     fields = ('title','body',)
     template_name = 'article_edit.html'
+    #success_url = reverse_lazy('article_detail')
 
 class ArticleDeleteView(DeleteView):
     model = Article
